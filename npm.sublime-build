@@ -1,0 +1,22 @@
+	{
+	"cmd": ["npm", "run", "build"],
+	"working_dir": "${project_path:${folder}}",
+
+	"target": "ansi_color_build",
+	"syntax": "Packages/ANSIescape/ANSI.tmLanguage",
+	
+	"variants" : [
+
+        { "name": "Run",
+          "cmd" : ["npm", "run", "start"]
+        },
+
+        { "name": "Test",
+          "cmd" : ["npm", "run", "test"]
+        },
+
+        { "name": "Test Single",
+          "cmd" : ["npm", "run", "test-single", "$file"]
+        }
+    ]
+}
